@@ -1,0 +1,35 @@
+header {
+  background-color: black;
+  padding: cre(10px) 0 cre(10px);
+  margin-bottom: cre(40px);
+  min-height: cre(110px);
+  z-index: 1;
+
+  @include breakpoint($bp-mobile) {
+    padding: cre(10px) 0 cre(50px);
+    margin-bottom: 0;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 48px;
+    color: transparent;
+    line-height: 1;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-image: url('../images/dna-logo.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100%;
+      max-width: cre(217px);
+      height: cre(100px);
+      transform: translateX(-50%);
+    }
+  }
+}
