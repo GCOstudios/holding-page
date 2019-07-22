@@ -1,1 +1,11 @@
-console.log('hello world again')
+(function($) {
+
+  'use strict';
+
+  // Background video
+  // ======================
+  $('#bgndVideo').YTPlayer({
+    showControls: false
+  })
+
+})(jQuery);
