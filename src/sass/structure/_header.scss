@@ -1,21 +1,24 @@
 header {
   background-color: black;
-  padding: cre(10px) 0 cre(10px);
+  padding: cre(10px) 0 cre(40px);
   margin-bottom: cre(40px);
-  min-height: cre(110px);
-  z-index: 1;
+  z-index: 2;
 
   @include breakpoint($bp-mobile) {
-    padding: cre(10px) 0 cre(50px);
+    padding: cre(10px) 0 cre(40px);
     margin-bottom: 0;
     min-height: auto;
   }
 
   h1 {
-    font-size: 48px;
+    font-size: cre(28px);
     color: transparent;
     line-height: 1;
     position: relative;
+
+    @include breakpoint($bp-mobile) {
+      font-size: cre(48px);
+    }
 
     &::before {
       content: '';
@@ -28,8 +31,12 @@ header {
       left: 50%;
       width: 100%;
       max-width: cre(217px);
-      height: cre(100px);
+      height: cre(60px);
       transform: translateX(-50%);
+
+      @include breakpoint($bp-mobile) {
+        height: cre(80px);
+      }
     }
   }
 }
