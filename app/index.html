@@ -16,8 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> 
     
     <!-- CSS File -->
-    <link rel="stylesheet" href="css/jquery.mb.YTPlayer.min.css">
-    <link rel="stylesheet" href="css/style.min.css?v=1563800424">
+    <link rel="stylesheet" href="css/style.min.css?v=1563819941">
   </head>
   <body>
 
@@ -25,13 +24,17 @@
       <h1>DNA Cinemas</h1>
     </header>
     <main>
-      <div class="hero-treatment">
-        <div id="bgndVideo" class="player" data-property="{videoURL:'https://youtu.be/VVvX1qa3ATA',containment:'body',autoPlay:true, useOnMobile: true, loop:1000, stopMovieOnBlur: false, mute:true, startAt:1, opacity:1}">Video Youtube</div>
+      <div class="video-container">
+        <video autoplay="autoplay" loop muted playsinline id="welcome-video" data-poster="">
+          <source src="assets/waves.mp4" type="video/mp4">
+          <source src="assets/waves.webm" type="video/webm">
+          <source src="assets/waves.ogv" type="video/ogg">
+        </video>
       </div>
 
       <div class="container">
-        <h2>Excellence is in our DNA</h2>
-        <p class="lead-text">Worldwide Cinemas Design and Installation</p>
+        <h2><span>Excellence</span> is in our DNA</h2>
+        <p class="lead-text">Worldwide Cinema Design and Installation</p>
         <a class="cta-button" href="mailto:rich@dnacinemas.com">Contact us</a>
         <p>tel: 07493 821925</p>
       </div>
@@ -43,7 +46,6 @@
 
   <!-- JavaScript File -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery.mb.YTPlayer.min.js"></script>
-    <script src="js/main.min.js?v=1563800424"></script>
+    <script src="js/main.min.js?v=1563819941"></script>
   </body>
 </html>
