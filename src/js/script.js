@@ -4,8 +4,6 @@
 
   // Background video
   // ======================
-  $('#bgndVideo').YTPlayer({
-    showControls: false
-  })
+
 
 })(jQuery);
